@@ -1,0 +1,55 @@
+//===========================================================================================================================
+
+event HudHealthBonusPulse
+{
+	Animate	heart 			wide		"32"								Linear 	0.0 	0.2
+	Animate	heart 			wide		"64"									Linear 	0.2 	0.4
+	Animate	heart 			tall		"32"								Linear 	0.0 	0.2
+	Animate	heart 			tall		"64"									Linear 	0.2 	0.4
+	
+	Animate	heart 			ypos		    	      	"0"			Linear 	0.0 	0.2
+	
+	Animate	heart 			ypos		    	       	"5"			Linear 	0.2 	0.4
+	
+
+	RunEvent HudHealthBonusPulseLoop				0.4
+}
+
+event HudHealthBonusPulseStop
+{
+	StopEvent HudHealthBonusPulse 					0.0
+	StopEvent HudHealthBonusPulseLoop				0.0
+
+	Animate	heart 			wide		"32"								Linear 	0.0 	0.2
+	Animate	heart 			tall		"32"								Linear 	0.0 	0.2
+	Animate	heart 			ypos		    	       	"0"			Linear 	0.0 	0.2
+}
+
+//===========================================================================================================================
+
+event HudHealthDyingPulse
+{
+	Animate	heart 			wide		"32"								Linear 	0.0 	0.2
+	Animate	heart 			wide		"64"									Linear 	0.2 	0.4
+	Animate	heart 			tall		"32"								Linear 	0.0 	0.2
+	Animate	heart 			tall		"64"									Linear 	0.2 	0.4
+	
+	Animate	heart 			ypos		    	      	"0"			Linear 	0.0 	0.2
+	
+	Animate	heart 			ypos		    	       	"5"			Linear 	0.2 	0.4
+
+	RunEvent HudHealthDyingPulseLoop				0.25
+}
+
+event HudHealthDyingPulseStop
+{
+	StopEvent HudHealthDyingPulse					0.0
+	StopEvent HudHealthDyingPulseLoop 				0.0
+
+	Animate	heart 			wide		"32"								Linear 	0.0 	0.2
+	Animate	heart 			tall		"32"								Linear 	0.0 	0.2
+	Animate	heart 			ypos		    	       	"0"			Linear 	0.0 	0.2
+
+}
+
+//===========================================================================================================================
